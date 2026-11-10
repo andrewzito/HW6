@@ -1,0 +1,31 @@
+# A resistor (R), inductor (L), capacator (C) - (RLC) network
+# Each circuit element is connected to two nodes.
+# Nodes are given a unique name of one letter
+# Circuit elements are named by the nodes they connect arranged in alphabetical order.  
+# Voltage sources are named by the nodes they connect arranged in alphabetical order.  
+
+<Resistor>
+Name = ab
+Resistance = 100
+</Resistor>
+
+<Inductor>
+Name = bc
+Inductance = 0.01
+</Inductor>
+
+<Capacitor>
+Name = cd
+Capacitence = 0.000001
+</Capacitor>
+
+<Source>
+Name = ad
+Type = Voltage
+Value = 10
+</Source>
+
+<Loop>
+Name = L1
+Nodes = a,b,c,d
+</Loop>
